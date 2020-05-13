@@ -93,6 +93,37 @@ When you're happy with the results, automate the recipe in cron_ or equivalent (
 
 **Pro tip!** Edit the new library and uncheck *"Include in dashboard"*. Othewise if you start watching something that exists in multiple libraries, all items will show up on the On Deck. This makes it so that only the item in your main library shows up.
 
+**Pro tip2**
+for language edits used follow file ;-)
+for German User or all other ^^
+
+.. code-block:: shell
+
+    nano plexlibrary/plexutils.py
+            
+change follow line ONLY !!!
+
+from 
+
+.. code-block:: shell
+
+    'language': 'en',
+    to
+    'language': 'any_language_what_you_want',
+
+.. code-block:: shell
+
+    CTRG + X - Y !
+
+.. code-block:: shell
+
+    python3 plexlibrary movies_trending
+
+Now all new libarys will automatic used the fixed language what want ;)
+
+
+
+
 Planned features
 ----------------
 See issues.
