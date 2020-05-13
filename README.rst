@@ -95,7 +95,10 @@ Getting started
 
        if you dont used /opt/appdata edit follow line 
        nano scripts/plexlibrary.sh
-       ( adjuts -> FOLDER="/opt/appdata" )
+       ( 
+         adjuts -> FOLDER="/opt/appdata" 
+         adjust -> CRONTIME="daily"
+       )
        CTRG + O + Y 
        done ;-)
     
