@@ -18,7 +18,7 @@ class Plex(object):
         headers = {"X-Plex-Token": self.token}
         params = {
             'name': name,
-            'language': 'en',
+            'language': 'de',
             'location': folder,
         }
         if library_type == 'movie':
