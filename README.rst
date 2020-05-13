@@ -49,6 +49,11 @@ Getting started
 
 1. Clone or download this repo.
 
+   .. code-block:: shell
+
+       sudo apt-get install git && mkdir -p /opt/appdata && cd /opt/appdata &&  git clone https://github.com/doob187/python-plexlibrary.git && cd python-plex
+
+
 2. Install Python and pip if you haven't already.
 
 3. Install the requirements:
@@ -59,9 +64,42 @@ Getting started
 
 4. Copy config-template.yml to config.yml and edit it with your information.
 
+   .. code-block:: shell
+
+       cp -rv config-template.yml config.yml 
+
+
   * Here's a guide if you're unfamiliar with YAML syntax. **Most notably you need to use spaces instead of tabs!** http://docs.ansible.com/ansible/latest/YAMLSyntax.html
 
 5. Check out the recipe examples under recipes/examples. Copy an example to recipes/ and edit it with the appropriate information.
+
+6. recipes edits USERSIDE !!
+
+   .. code-block:: shell
+
+       nano recipes/ > press tag to see all recipes.yml 
+       For Movies
+       adjust 1.1) 'name' = Plex library name. ->  - name: 'Filme'
+       For TV Shows
+       adjust 1.2) 'name' = Plex library name. ->  - name: 'Serien'
+       adjust 2.1) Example path below assumes main movies are located ->    - '/mnt/unionfs/Movies'
+       adjust 2.2) Example path below assumes main movies are located ->    - '/mnt/unionfs/tv'
+       adjust 3.) 'folder' = Path on host where symlinks are stored ->  folder: '/mnt/recipes/movies/action/'
+       CTRG + O + Y
+       done :-)
+
+
+7. The plexlibrary.sh inside the script folder 
+
+   .. code-block:: shell
+
+       if you dont used /opt/appdata edit follow line 
+       nano scripts/plexlibrary.sh
+       ( adjuts -> FOLDER="/opt/appdata" )
+       CTRG + O + Y 
+       done ;-)
+    
+---------------
 
 Usage
 -----
