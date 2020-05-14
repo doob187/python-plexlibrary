@@ -160,7 +160,7 @@ from
 
     python3 plexlibrary movies_trending
 
-Now all new libarys will automatic used the fixed language what want ;)
+Now all new libarys will automatic used the fixed language ;)
 
 
 
