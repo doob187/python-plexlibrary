@@ -8,19 +8,14 @@ source_list_urls:
 
 # Source library details
 source_libraries:
-  - name: 'Movies'
+  - name: 'Filme'
     folders:
-      - '/path/to/Movies'
-      - '/path/to/More Movies'
-  - name: 'Different Movies'
-    folders:
-      - '/path/to/Different Movies'
-
+      - '/mnt/unionfs/Movies'
 
 # New library details
 new_library:
-  name: 'Movies - Recommended'
-  folder: '/path/to/symlink/supporting/filesystem/Movies - Recommended/'
+  name: 'Filme - Recommended'
+  folder: '/mnt/recipes/movies/action/'
   sort: true
   sort_title:
     format: '{number}. {title}'
