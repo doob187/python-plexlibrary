@@ -15,7 +15,7 @@ source_libraries:
 # New library details
 new_library:
   name: 'Filme - Recommended'
-  folder: '/mnt/recipes/movies/action/'
+  folder: '/mnt/recipes/movies/recommendations/'
   sort: true
   sort_title:
     format: '{number}. {title}'
