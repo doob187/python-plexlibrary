@@ -95,7 +95,10 @@ Getting started
 
        if you dont used /opt/appdata edit follow line 
        nano scripts/plexlibrary.sh
-       ( adjuts -> FOLDER="/opt/appdata" )
+       ( 
+         adjuts -> FOLDER="/opt/appdata" 
+         adjust -> CRONTIME="daily"
+       )
        CTRG + O + Y 
        done ;-)
     
@@ -157,7 +160,7 @@ from
 
     python3 plexlibrary movies_trending
 
-Now all new libarys will automatic used the fixed language what want ;)
+Now all new libarys will automatic used the fixed language ;)
 
 
 

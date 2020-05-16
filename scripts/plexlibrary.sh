@@ -10,8 +10,11 @@
 #########################################################################
 #                 CUSTOM SCRIPT WITH CRONATB AUTO ADD                   #
 #########################################################################
-
+##USERSIDE EDITS !!
 FOLDER="/opt/appdata"
+CRONTIME="daily"
+###
+###dont edit below !!!
 CRONTABFILE="/tmp/mycron"
 PATH='/usr/bin:/bin:/usr/local/bin'
 export PYTHONIOENCODING=UTF-8
@@ -33,11 +36,11 @@ owned() {
  if [[ ! -e "$CRONTABFILE" ]]; then
     sudo chmod +x ${FOLDER}/python-plexlibrary/scripts/plexlibrary.sh
     crontab -l > /tmp/mycron
-    echo "@daily ${FOLDER}/python-plexlibrary/scripts/plexlibrary.sh" >> /tmp/mycron
+    echo "@${CRONTIME} ${FOLDER}/python-plexlibrary/scripts/plexlibrary.sh" >> /tmp/mycron
     crontab /tmp/mycron
-    echo "Python-Plexlibrary Crontad is added" 
+    echo "Python-Plexlibrary ${CRONTIME} Crontab is added" 
  else
-    echo "Python-Plexlibrary Crontad is already added" 
+    echo "Python-Plexlibrary  ${CRONTIME} Crontab is already added" 
  fi
 } 
 
