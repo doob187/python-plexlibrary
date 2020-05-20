@@ -36,7 +36,7 @@ owned() {
  if [[ ! -e "$CRONTABFILE" ]]; then
     sudo chmod +x ${FOLDER}/python-plexlibrary/scripts/plexlibrary.sh
     crontab -l > /tmp/mycron
-    echo "@${CRONTIME} ${FOLDER}/python-plexlibrary/scripts/plexlibrary.sh" >> /tmp/mycron
+    echo "@${CRONTIME} bash ${FOLDER}/python-plexlibrary/scripts/plexlibrary.sh" >> /tmp/mycron
     crontab /tmp/mycron
     echo "Python-Plexlibrary ${CRONTIME} Crontab is added" 
  else
