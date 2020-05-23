@@ -49,13 +49,13 @@ owned() {
 
 remove_old() {
 remold="$(cat ${FOLDER}/python-plexlibrary/recipes/*.yml | grep "${RENOVEOLD}" | awk '{print $2}')"
-
 for dirrm in ${remold} ; do
   rm -rf ${dirrm}
 done
 }
 
 plexpython() {
+truncate -s 0 ${FOLDER}/python-plexlibrary/plexlibrary.log
 echo $(date) | tee -a ${FOLDER}/python-plexlibrary/plexlibrary.log
 echo "" | tee -a ${FOLDER}/python-plexlibrary/plexlibrary.log
 
