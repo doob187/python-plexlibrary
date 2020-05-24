@@ -31,7 +31,6 @@ EOF
     exit 0
   else
      owned
-     remove_old
      plexpython
   fi  
 }
@@ -45,13 +44,6 @@ owned() {
  else
     echo "Python-Plexlibrary  ${CRONTIME} Crontab is already added" 
  fi
-}
-
-remove_old() {
-remold="$(cat ${FOLDER}/python-plexlibrary/recipes/*.yml | grep "${RENOVEOLD}" | awk '{print $2}')"
-for dirrm in ${remold} ; do
-  rm -rf ${dirrm}
-done
 }
 
 plexpython() {
