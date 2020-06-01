@@ -35,7 +35,7 @@ EOF
   fi  
 }
 owned() {
- if [[ ! -e "$CRONTABFILE" ]]; then
+ if [[ ! -f "$CRONTABFILE" ]]; then
     sudo chmod +x ${FOLDER}/python-plexlibrary/scripts/plexlibrary.sh
     crontab -l > /tmp/mycron
     echo "@${CRONTIME} bash ${FOLDER}/python-plexlibrary/scripts/plexlibrary.sh" >> /tmp/mycron
