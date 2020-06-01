@@ -13,7 +13,6 @@
 ##USERSIDE EDITS !!
 FOLDER="/opt/appdata"
 CRONTIME="daily"
-RENOVEOLD="/mnt/recipes/"
 
 ###
 ###dont edit below !!!
