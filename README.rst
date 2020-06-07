@@ -51,11 +51,11 @@ Getting started
 
    .. code-block:: shell
 
-       sudo apt-get install git && mkdir -p /opt/appdata && cd /opt/appdata &&  git clone https://github.com/doob187/python-plexlibrary.git && cd python-plex && pip install -r requirements.txt
+       sudo apt-get install git && sudo mkdir -p /opt/appdata && sudo cd /opt/appdata && sudo git clone https://github.com/doob187/python-plexlibrary.git && sudo cd python-plex && sudo pip install -r requirements.txt
 
    .. code-block:: shell
 
-       sudo apt-get install git &&  git clone https://github.com/doob187/python-plexlibrary.git /opt/appdata/python-plex && cd /opt/appdata/python-plex && pip install -r requirements.txt
+       sudo apt-get install git && sudo git clone https://github.com/doob187/python-plexlibrary.git /opt/appdata/python-plex && sudo cd /opt/appdata/python-plex && sudo pip install -r requirements.txt
 
 2. Install Python and pip if you haven't already.
 
