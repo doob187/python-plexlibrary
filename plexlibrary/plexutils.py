@@ -23,12 +23,20 @@ class Plex(object):
         }
         if library_type == 'movie':
             params['type'] = 'movie'
-            params['agent'] = 'com.plexapp.agents.imdb'
+            params['includeInGlobal'] = 'false'
+            params['enableBIFGeneration'] = 'false'
+            params['enableCinemaTrailers'] = 'false'
+            params['only_trailers'] = 'false'
+            params['summary'] = '1'
             params['scanner'] = 'Plex Movie Scanner'
+            params['agent'] = 'com.plexapp.agents.imdb'
         elif library_type == 'tv':
             params['type'] = 'show'
-            params['agent'] = 'com.plexapp.agents.thetvdb'
+            params['includeInGlobal'] = 'false'
+            params['enableBIFGeneration'] = 'false'
+            params['enableCinemaTrailers'] = 'false'
             params['scanner'] = 'Plex Series Scanner'
+            params['agent'] = 'com.plexapp.agents.thetvdb'
         else:
             raise Exception("Library type should be 'movie' or 'tv'")
 
