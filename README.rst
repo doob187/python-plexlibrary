@@ -51,13 +51,19 @@ Getting started
 
    .. code-block:: shell
 
-       sudo apt-get install git && sudo mkdir -p /opt/appdata && cd /opt/appdata && sudo git clone https://github.com/doob187/python-plexlibrary.git && cd python-plex && sudo pip install -r requirements.txt
+       sudo apt-get install git
+       sudo mkdir -p /opt/appdata
+       cd /opt/appdata 
+       sudo git clone https://github.com/doob187/python-plexlibrary.git
+       cd python-plexlibrary 
 
    .. code-block:: shell
 
-       sudo apt-get install git && sudo git clone https://github.com/doob187/python-plexlibrary.git /opt/appdata/python-plex && cd /opt/appdata/python-plex && sudo pip install -r requirements.txt
+       sudo apt-get install git 
+       sudo git clone https://github.com/doob187/python-plexlibrary.git /opt/appdata/python-plexlibrary
+       cd /opt/appdata/python-plexlibrary 
 
-2. Install Python and pip if you haven't already.
+2. Install Python3 and pip if you haven't already.
 
 3. Install the requirements:
 
@@ -90,7 +96,6 @@ Getting started
        adjust 3.) 'folder' = Path on host where symlinks are stored ->  folder: '/mnt/recipes/movies/action/'
        CTRG + O + Y
        done :-)
-
 
 7. The plexlibrary.sh inside the script folder 
 
@@ -135,7 +140,11 @@ When you're happy with the results, automate the recipe in cron_ or equivalent (
 
 .. _cron: https://code.tutsplus.com/tutorials/scheduling-tasks-with-cron-jobs--net-8800
 
-**Pro tip!** Edit the new library and uncheck *"Include in dashboard"*. Othewise if you start watching something that exists in multiple libraries, all items will show up on the On Deck. This makes it so that only the item in your main library shows up.
+**Pro tip!**
+
+Edit the new library and uncheck *"Include in dashboard"*. 
+Othewise if you start watching something that exists in multiple libraries, all items will show up on the On Deck. 
+This makes it so that only the item in your main library shows up.
 
 **Pro tip2**
 for language edits used follow file ;-)
