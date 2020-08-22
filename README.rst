@@ -2,14 +2,19 @@ Python-PlexLibrary
 ==================
 
 Python command line utility for creating and maintaining dynamic Plex
-libraries based on "recipes".
+libraries and playlists based on "recipes".
 
-E.g. Create a library consisting of all movies or tv shows in a Trakt_ list or
+E.g. Create a library or playlist consisting of all movies or tv shows in a Trakt_ list or
 on an IMDb_ chart that exist in your main library, and set the sort titles
-accordingly.
+accordingly (sort only available for libraries).
 
 .. _Trakt: https://trakt.tv/
 .. _IMDb: https://imdb.com/
+
+Known limitations
+-----------------
+
+The new Plex Movie agent is not currently supported.
 
 Disclaimer
 ----------
